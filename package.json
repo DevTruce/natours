@@ -1,0 +1,27 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Natours landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss src/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevTruce/natours.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss"
+  ],
+  "author": "Truce R",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/DevTruce/natours/issues"
+  },
+  "homepage": "https://github.com/DevTruce/natours#readme"
+}
