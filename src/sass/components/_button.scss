@@ -4,6 +4,7 @@
     animation-fill-mode: backwards;
   }
 
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -14,6 +15,10 @@
     transition: all 250ms ease-in;
     position: relative;
     font-size: $default-font-size;
+
+    // changes for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &::after {
@@ -41,7 +46,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: rgba($color-black, 0.22) 0rem 0.5rem 1rem;
   }
