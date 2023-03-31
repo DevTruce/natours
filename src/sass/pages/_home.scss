@@ -4,7 +4,11 @@
   margin-top: -20vh;
 
   @include respond(tab-port) {
-    padding: 20rem 0;
+    padding: 28rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 30rem 2rem;
   }
 }
 
@@ -71,13 +75,32 @@
       transparent 50%
     ),
     url(../imgs/nat-10.jpg);
-  background-size: cover;
+  background-size: 100%;
   border-radius: $border-radius;
   box-shadow: 0 1.5rem 4rem $shadowMain--1;
-  height: 50rem;
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
+  @include respond(tab-land) {
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 100%
+      ),
+      url(../imgs/nat-10.jpg);
   }
 }
